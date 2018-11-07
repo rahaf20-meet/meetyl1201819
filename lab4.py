@@ -25,10 +25,11 @@ class Person(object):
 		self.city = city
 		self.gender = gender
 		self.height = height
+		self.favorite_food = favorite_food
 	def eat(self):
-		print(self.name + " is eating breakfast." )
+		print(self.name + " is eating " + self.favorite_food )
 	def description(self):
 		print(self.name + " is " + str(self.age) + " years old. She lives in " + self.city )
-b = Person("rahaf", 15, "Jerusalem", "female", 160)
+b = Person("rahaf", 15, "Jerusalem", "female", 160, "cereal")
 b.eat()
 b.description()
