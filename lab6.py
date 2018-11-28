@@ -19,7 +19,15 @@ square1 = Square(3)
 
 square1.random_color()
 
-class hexagon(Square):
-	
+# class Rectangle(Square):
+# 	def __init__(self,width,height)
+# 		self.width = width
+# 		self.height = height
+class Hexagon(Turtle):
+	def __init__ (self,x):
+		Turtle.__init__(self)
+		turtle.register_shape("Hexagon",((0,0),(x,0),(2*x,x),(2*x,x*2),(x,3*x),(0,3*x),(-x,2*x),(-x,x),(0,0)))
+		self.shape("Hexagon")
+H = Hexagon(20)
 turtle.mainloop()
 

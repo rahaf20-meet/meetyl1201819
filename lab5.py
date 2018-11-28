@@ -7,7 +7,7 @@ if greeting in ["Arrr!"]:
 	print("Go away, pirate.")
 else :
 	print("Greetings, hater of pirates!")
-"""
+
 # A time traveler has suddenly appeared in your classroom!
 
 # Create a variable representing the traveler's
@@ -15,7 +15,7 @@ else :
 # and greet our strange visitor with a different message
 # if he is from the distant past (before 1900),
 # the present era (1900-2020) or from the far future (beyond 2020).
-"""
+
 import tkinter as tk
 from tkinter import simpledialog
 
@@ -27,12 +27,12 @@ elif year > 1900 and year < 2020:
     print ("That's totally the present!")
 else:
     print ("Far out, that's the future!!")
-"""
+
 # Write a simple class that defines a person
 # with attributes of first_name, last_name
 # and has a method signature of "speak" which
 # prints the object as "Jefferson, Thomas".
-"""
+
 class Person:
   def __init__(self, first_name, last_name):
     self.first_name = first_name
@@ -45,7 +45,7 @@ you = Person("Ethan", " Reed")
 
 me.speak()
 you.speak()
-"""
+
 import tkinter as tk
 from tkinter import simpledialog
 # Calculating Grades (ok, let me think about this one)
@@ -68,7 +68,7 @@ from tkinter import simpledialog
 # Average: 33
 # Grade: F
 # Student iis failing.
-"""
+
 exam_one = int(simpledialog.askstring("Input", "Input exam grade one: ", parent=tk.Tk().withdraw()))
 
 exam_two = int(simpledialog.askstring("Input", "exam grade two: ", parent=tk.Tk().withdraw()))
@@ -104,7 +104,7 @@ if letter_grade is "F":
     print ("Student is failing.")
 else:
     print ("Student is passing.")
-"""
+
 class Person():
    def __init__(self, name, favorite_food ,age ,color):
        self.name = name
@@ -125,4 +125,44 @@ b = Person("Jake", "chocolate", 15, "black")
 
 b.print_info()
 
+class Bear():
+	def __init__(self, name):
+		self.name = name
+		print("A new bear created. Its name is: " + self.name)
+	
+	def say_hi(self):
+		print("Hi! I’m a bear. My name is " + self.name)
+my_bear = Bear("Danny")
+my_bear.say_hi()
 
+balloons = 5
+name = "Ron"
+color = "Yellow"
+print("This is a tale about " + str(balloons) + " balloons. The first kid is " + name + " who got a " + color + "balloon")
+
+class Cake():
+	def __init__(self,cake_flavor):
+		self.cake_flavor = cake_flavor
+
+	def eat(self):
+		print("Yummy!!! Eating a " + self.cake_flavor + " cake :)")
+
+cake = Cake("chocolate")
+cake.eat()
+# what I want to be printed: Yummy!!! Eating a chocolate cake :)
+"""
+class Cat():
+	def __init__(self,name,age):
+		self.name = name
+		self.age = age
+	def birthday(self):
+		self.age += 1
+		if self.age >= 100
+			print("Dong dong, the cat is dead!")
+		else:
+			print(self.name + "hasing its" + self.age + "birthday!")
+
+my_cat = Cat("Salem")
+my_cat.birthday(8)
+# what I want: my cat to celebrate its 8th birthday (and all the 
+# birthdays that come before that)

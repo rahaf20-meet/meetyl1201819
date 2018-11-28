@@ -1,8 +1,9 @@
 import turtle
-"""
+
 turtle.addshape("tire.gif")
 turtle.goto(0,0)
 turtle.shape("tire.gif")
+
 """
 for i  in range(3000):
 	turtle.speed(0)
@@ -19,3 +20,4 @@ for i  in range(3000):
 	turtle.pendown()
 	turtle.left(i+30)
 turtle.mainloop()
+"""
