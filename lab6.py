@@ -1,4 +1,3 @@
-
 import turtle
 import random
 from turtle import Turtle
@@ -30,4 +29,3 @@ class Hexagon(Turtle):
 		self.shape("Hexagon")
 H = Hexagon(20)
 turtle.mainloop()
-
